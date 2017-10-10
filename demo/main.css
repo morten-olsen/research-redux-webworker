@@ -1,0 +1,15 @@
+@keyframes Flicker {
+  0%   { left: 0; }
+  100% { left: 50%; }
+}
+
+.animation {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  border-radius: 50%;
+  background: red;
+  animation: Flicker 2s infinite;
+  animation-direction: alternate;
+}
