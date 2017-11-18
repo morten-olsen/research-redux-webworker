@@ -1,9 +1,11 @@
 import { createWorker } from 'redux-webworker';
 import { createStore } from 'redux';
 
+let t;
+
 const reducer = (state = { count: 1 }, action) => {
   for (let i = 0; i < 10000000; i++) {
-    const t = Math.sin(i);
+    t = Math.sin(Math.random());
   }
   switch (action.type) {
     case 'INCREMENT':

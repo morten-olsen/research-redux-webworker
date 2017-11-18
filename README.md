@@ -1,6 +1,6 @@
 # Toolkit for generating redux stores running in a separate thread
 
-[demo](https://trendsales.github.io/research-redux-webworker/index.html)
+[demo](https://morten-olsen.github.io/research-redux-webworker/index.html)
 
 The idea is to move redux to a web worker so that the UI thread remains free. Object dispatches are transferred to the to the worker thread and the resulting state is transferred back to the main thread using `redux`s `subscribe`.
 
