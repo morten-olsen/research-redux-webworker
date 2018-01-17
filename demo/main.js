@@ -7,8 +7,8 @@ const View = ({ time, count, onIncrement, onDecrement }) => (
   <div className="container">
     <div>{time}</div>
     {count}
-    <button onClick={onIncrement}>Incement</button>
-    <button onClick={onDecrement}>Decement</button>
+    <button onClick={onIncrement}>Increment</button>
+    <button onClick={onDecrement}>Decrement</button>
     <div className="animation" />
   </div>
 )
